@@ -86,7 +86,7 @@ endmodule
 ## RTL realization
 
 # output:
-```
+
 F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 ![233444435-4818a840-64c2-483b-a579-1e721d4a128e](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/3905b57b-1971-4a7e-aa76-716a04f08317)
 
@@ -103,7 +103,7 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## FOR NOR:
 ![233446842-1ef9acbf-a8d4-459f-a747-f5e7aae8e322](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/769b79ba-50f2-4726-9716-4609e2f3c6cf)
 
-```
+
 
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
