@@ -60,52 +60,49 @@ its operations in quartus using Verilog programming.
 
 ## Program:
 ```
-Program to implement the given logic function using NAND and NOR gates and to
-verify its operations in quartus using
-Verilog programming.
-Developed by: LOKESH KUMAR P
-RegisterNumber: 212222240054
 
-Using NAND gates:
-module NAND(A,B,C,D,F);
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
+Developed by: Lokesh kumar P
+RegisterNumber:  212222110021
+
+
+F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
+
+module exp2f1(A,B,C,D,f1);
 input A,B,C,D;
-output F;
-wire P,Q,R;
-assign P=(~(~C & B & A));
-assign Q=(~(~D & C & A));
-assign R=(~(C & ~B & A));
-assign F=~(P & Q & R);
+output f1;
+assign f1=(~B&~D)|(A&B&~C)|(~A&B&D);
 endmodule
 
-Using NOR gates:
-module NOR(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R,S;
-assign P = (C & ~B & A);
-assign Q = (D & ~C & A);
-assign R = (C & ~B & A);
-assign S = (~(P | Q | R));
-assign F = (~S);
+F2=xy’z+x’y’z+w’xy+wx’y+wxy
+
+module exp2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=(~y&z)|(x&y)|(w&y);
 endmodule
+```
 
 ## RTL realization
 
 # output:
-## RTL FOR NAND GATE:
 ```
-![D1](https://user-images.githubusercontent.com/119644432/234000563-33b4a7ec-8338-4cea-ace0-5742ff68a4b7.png)
+F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
+![233444435-4818a840-64c2-483b-a579-1e721d4a128e](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/3905b57b-1971-4a7e-aa76-716a04f08317)
 
-## FOR NOR:
-![D2](https://user-images.githubusercontent.com/119644432/234000724-4717d02d-c71c-4754-9bd5-d17bcb1eb004.png)
+F2=xy’z+x’y’z+w’xy+wx’y+wxy
+![233444228-a12416d9-cc9c-4d53-8da7-1eb39e636955](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/9e6c9525-0797-48fb-8170-0ac14674e148)
+
 
 ## Timing Diagram
 
 # FOR NAND:
-![D3](https://user-images.githubusercontent.com/119644432/234000926-3e93994c-495c-4145-96e8-0dd817667e98.png)
+![233448490-bde5a4e7-3465-45cb-8e95-49a796d61035](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/59a60755-8ebc-4782-b578-e01820242609)
+
 
 ## FOR NOR:
-![D4](https://user-images.githubusercontent.com/119644432/234001001-fc39914f-3237-4b7d-94fc-8da320aecb72.png)
+![233446842-1ef9acbf-a8d4-459f-a747-f5e7aae8e322](https://github.com/LOKESHKUMARPANCHATCHARAM/Experiment--02-Implementation-of-combinational-logic-/assets/119644432/769b79ba-50f2-4726-9716-4609e2f3c6cf)
+
 ```
 
 ## Result:
